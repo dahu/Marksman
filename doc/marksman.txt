@@ -1,0 +1,23 @@
+*marksman.txt*	Better Marks Management
+
+
+			VIM REFERENCE MANUAL	by Barry Arthur
+
+
+Help on using marksman                                          *marksman*
+
+1. Introduction				|marksman-intro|
+2. Configuration			|marksman-configuration|
+3. Other				|marksman-other|
+
+==============================================================================
+ 1. INTRODUCTION                                          *marksman-intro*
+
+Marksman provides better marks management. See |mark-motions|.
+
+1. Jumps to global marks also jump to last cursor position.
+2. Jumps to deleted marks jump close to last known position.
+
+
+Template From: https://github.com/dahu/Area-41/
+ vim:tw=78:ts=8:ft=help:norl:

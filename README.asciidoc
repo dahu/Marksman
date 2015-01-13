@@ -1,0 +1,13 @@
+Marksman
+--------
+
+__Never miss your mark again__
+
+TIP: If you like Marksman and want to share the W00t!, I'm grateful for
+https://www.gittip.com/bairuidahu/[tips] or
+http://of-vim-and-vigor.blogspot.com/[beverages].
+
+Marksman provides better marks management See `:help mark-motions`.
+
+. Jumps to global marks also jump to last cursor position.
+. Jumps to deleted marks jump close to last known position.
