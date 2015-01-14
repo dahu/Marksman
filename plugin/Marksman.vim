@@ -1,6 +1,6 @@
 " Vim global plugin for better Marks Management
 " Maintainer:	Barry Arthur <barry.arthur@gmail.com>
-" Version:	0.1
+" Version:	0.2
 " Description:	1. Jumps to global marks also jump to last cursor position
 " 		2. Jumps to deleted marks jump close to last known position
 " Last Change:	2015-01-14
@@ -19,18 +19,18 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 " load guard
-"if exists("g:loaded_Marksman")
-"      \ || v:version < 700
-"      \ || &compatible
-"  let &cpo = s:save_cpo
-"  finish
-"endif
-"let g:loaded_Marksman = 1
+if exists("g:loaded_Marksman")
+      \ || v:version < 700
+      \ || &compatible
+  let &cpo = s:save_cpo
+  finish
+endif
+let g:loaded_Marksman = 1
 
 " Maps: {{{1
-nnoremap <silent> <expr> ' marksman#jump("'")
-nnoremap <silent> <expr> ` marksman#jump("`")
-nnoremap <silent>        m :call marksman#set()<cr>
+nnoremap <expr>   '       marksman#jump("'")
+nnoremap <expr>   `       marksman#jump("`")
+nnoremap <silent> m :call marksman#set()<cr>
 
 augroup Marksman
   au!

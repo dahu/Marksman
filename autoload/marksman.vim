@@ -60,7 +60,7 @@ function! marksman#jump(jump_type)
   call map(g:vimple#ma.update().local_marks().to_l(), 'extend(marks, {v:val.mark : v:val})')
 
   if jump_mark =~# '[A-Z]'
-    return ":norm! '" . jump_mark . "`\""
+    return ":norm! '" . jump_mark . "`\"\<cr>"
   elseif jump_mark =~# '[a-z]'
     if has_key(marks, jump_mark)
       return a:jump_type . jump_mark
