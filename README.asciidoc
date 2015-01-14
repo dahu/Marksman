@@ -7,6 +7,8 @@ TIP: If you like Marksman and want to share the W00t!, I'm grateful for
 https://www.gittip.com/bairuidahu/[tips] or
 http://of-vim-and-vigor.blogspot.com/[beverages].
 
+**Requires:** https://github.com/dahu/vimple[Vimple]
+
 Marksman provides better marks management See `:help mark-motions`.
 
 . Jumps to global marks also jump to last cursor position.
